@@ -1,10 +1,6 @@
-import { useState } from 'react';
-import Modal from './Modal';
 import { motion } from 'framer-motion';
 
 const ProjectCard = ({ image, title, description, technologies, links }) => {
-  const [current, setCurrent] = useState(null);
-
   return (
     <>
       <motion.div
