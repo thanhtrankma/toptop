@@ -14,7 +14,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  /* transition: 350ms ease; */
+  text-align: -webkit-center;
   z-index: 999;
 }
 
@@ -43,7 +43,7 @@ header {
 .wrapper-logo {
   display: flex;
   align-items: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
   color: #d76d0b;
 }
 
