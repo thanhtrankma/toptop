@@ -1,31 +1,27 @@
-import { Fragment } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
-import { DefaultLayout } from './components/layout';
+import Header from '~/components/Header';
+import Footer from '~/components/Footer';
+import ParticlesBackground from '~/components/ParticlesBackground';
+import { Fragment } from 'react';
 
 function App() {
   return (
-    <Router>
-      <div className="App">
-        <Routes>
-          {publicRoutes.map((route, index) => {
-            const Layout = route.layout === null ? Fragment : DefaultLayout;
-            const Page = route.component;
-            return (
-              <Route
-                key={index}
-                path={route.path}
-                element={
-                  <Layout>
-                    <Page />
-                  </Layout>
-                }
-              />
-            );
-          })}
-        </Routes>
-      </div>
-    </Router>
+    <Fragment>
+      <Router>
+        <Header />
+        <ParticlesBackground />
+        <div className="App">
+          <Routes>
+            {publicRoutes.map((route, index) => {
+              const Page = route.component;
+              return <Route key={index} path={route.path} element={<Page />} />;
+            })}
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
+    </Fragment>
   );
 }
 
