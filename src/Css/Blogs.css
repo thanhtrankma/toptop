@@ -1,0 +1,100 @@
+.blogs_2s {
+  width: 80%;
+  /* height: 100px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+}
+
+.blogs_2s h1 {
+  margin-bottom: 0.7rem;
+  width: 80%;
+  justify-self: center;
+  text-align: center;
+}
+
+.blogs_2s span {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+@media screen and (max-width: 560px) {
+  .About_Page section p {
+    font-size: 0.9rem;
+  }
+  .blogs_2s h1 {
+    margin-bottom: 1rem;
+    /* color: red; */
+  }
+}
+.Blogs_Page {
+  width: 100%;
+  min-height: 90vh;
+  padding-top: 8rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.Blogs_Page section {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 1.8rem;
+  padding-bottom: 1rem;
+  z-index: 3 !important;
+}
+
+.Blogs_Page section p {
+  font-size: 1rem;
+}
+
+.blogCard {
+  padding: 1.6rem 1.2rem;
+  margin: 2rem 1rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-color: aliceblue;
+  border-radius: 5px;
+  z-index: 3;
+  cursor: pointer;
+  color: #15151c;
+}
+
+.blogCard .blog_title {
+  font-size: 1.5rem;
+  margin-bottom: 1.1rem;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.blog_descr {
+  font-size: 1rem !important;
+  line-height: 23px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Hiển thị tối đa 2 dòng */
+  -webkit-box-orient: vertical;
+  overflow: hidden; /* Ẩn nội dung vượt quá */
+  text-overflow: ellipsis; /* Thêm dấu ba chấm */
+}
+.blog_date {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.5rem;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.content_blog {
+  color: aliceblue;
+}
+
+.content_blog h1 {
+  margin-bottom: 0.7rem;
+}
+
+.content_blog span {
+  color: var(--primary);
+  font-weight: bold;
+}

@@ -4,7 +4,13 @@ import { Link } from 'react-router-dom';
 
 import logo from '../Media/logo.png';
 
-import { AiOutlineHome, AiOutlineUser, AiOutlineFundProjectionScreen, AiOutlineMenu } from 'react-icons/ai';
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineFundProjectionScreen,
+  AiOutlineMenu,
+  AiOutlineBook,
+} from 'react-icons/ai';
 import { motion } from 'framer-motion';
 import Sidebar from './Sidebar';
 const Header = () => {
@@ -59,6 +65,12 @@ const Header = () => {
             <Link to="/projects" onClick={scroolToTop}>
               <AiOutlineFundProjectionScreen />
               <span>Projects</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/blogs" onClick={scroolToTop}>
+              <AiOutlineBook />
+              <span>Blogs</span>
             </Link>
           </li>
         </ul>

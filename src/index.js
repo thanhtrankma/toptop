@@ -8,6 +8,7 @@ import './Css/Header.css';
 import './Css/Home.css';
 import './Css/Footer.css';
 import './Css/Projects.css';
+import './Css/Blogs.css';
 import './Css/About.css';
 import './Css/Modal.css';
 import './Css/Sidebar.css';
